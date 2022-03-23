@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/score_card_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="20dp">
+
+        <LinearLayout
+            android:id="@+id/score_card_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--
+            android:background="@mipmap/chess2_back_foreground"
+            android:backgroundTint="#A0FFFFFF"
+            android:backgroundTintMode="src_over"
+            android:scaleType="centerCrop"-->
+
+                <include
+                    android:id="@+id/normal_sport_layout"
+                    android:visibility="gone"
+                    layout="@layout/score_cardview" />
+
+
+                <include
+                    android:id="@+id/racquet_sport_layout"
+                    android:visibility="gone"
+                    layout="@layout/racquet_sport_layout" />
+
+                <include
+                    android:id="@+id/live_status"
+                    android:visibility="visible"
+                    layout="@layout/live_status" />
+<!--
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/cardview_light_background">
+
+                <TextView
+                    android:id="@+id/venue_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Cricket Ground"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/goToVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:background="@color/cardview_light_background"
+                    android:src="@drawable/ic_location"
+                    app:layout_constraintStart_toEndOf="@id/venue_home" />
+
+                <TextView
+                    android:id="@+id/seeCompleteResults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="SEE MORE"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent" />-->
+
+
+<!--
+            </androidx.constraintlayout.widget.ConstraintLayout>
+-->
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

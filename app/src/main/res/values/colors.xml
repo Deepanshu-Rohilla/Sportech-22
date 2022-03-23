@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#083749</color>
+    <color name="colorPrimaryDark">#092c40</color>
+    <color name="colorAccent">#F50057</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_80">#37474F</color>
+    <color name="background">#FFAB40</color>
+    <color name="buttonBackground">#FFCA28</color>
+
+    <!-- Exotic Orchid - https://visme.co/blog/color-combinations/ -->
+    <color name="eo_dblue">#192E5B</color>
+    <color name="eo_blue">#1D65A6</color>
+    <color name="eo_lblue">#72A2C0</color>
+    <color name="eo_green">#00743F</color>
+    <color name="eo_yellow">#F2A104</color>
+
+    <color name="poster_top">#19234B</color>
+
+    <color name="eo_dblue2">#19335B</color>
+
+
+    <!--
+        <color name="poster_top">#2B2F3C</color>
+    -->
+    <color name="poster_bottom">#0D47A1</color>
+
+
+    <color name="bottom_bar">#FFFFFF</color>
+
+</resources>

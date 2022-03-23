@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:clipChildren="false"
+            android:clipToPadding="false">
+            ​<FrameLayout
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:elevation="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#685DFC"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccent"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/sport_icon2"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_sports_basketball_24px" />
+
+                        <TextView
+                            android:id="@+id/sport_name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:padding="10dp"
+                            android:text="Football"
+                            android:textSize="25sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Live Now"
+                        android:textSize="22sp"/>
+
+                    <include layout="@layout/score_cardview" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/cardview_light_background">
+
+                        <TextView
+                            android:id="@+id/venue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Cricket Ground"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/cardview_light_background"
+                            android:src="@drawable/ic_location"
+                            app:layout_constraintStart_toEndOf="@id/venue" />
+
+                        <TextView
+                            android:id="@+id/seeAllResults"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="30dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="SEE MORE"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </FrameLayout>
+            ​
+            <FrameLayout
+                android:id="@+id/cell_title_view"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="20dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccent">
+
+
+                        <ImageView
+                            android:id="@+id/sport_icon"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_sports_basketball_24px" />
+
+                        <TextView
+                            android:id="@+id/sport_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:padding="10dp"
+                            android:text="Football"
+                            android:textAlignment="textStart"
+                            android:textSize="25sp" />
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+            ​
+    </com.ramotion.foldingcell.FoldingCell>
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "454289916172",
+    "firebase_url": "https://sportech20-93bc1.firebaseio.com",
+    "project_id": "sportech20-93bc1",
+    "storage_bucket": "sportech20-93bc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454289916172:android:e75e944816c04ded704929",
+        "android_client_info": {
+          "package_name": "com.sportech20.iitd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454289916172-rtpk5ipen6miqik59nb02p6dheutbaes.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sportech20.iitd",
+            "certificate_hash": "6b4f80a5066464e42879e5e04ccf671c936784cf"
+          }
+        },
+        {
+          "client_id": "454289916172-st9st4h04n04cf912qpa2bgda7cjl189.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKWiITabqqHhsnTkOqdKEQ3hfp8zt621s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454289916172-st9st4h04n04cf912qpa2bgda7cjl189.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

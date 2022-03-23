@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:cardCornerRadius="150dp"
+                app:cardBackgroundColor="@color/colorWhite">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="180dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/membPhoto"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/memberName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textSize="20sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/memberPost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="Post"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/holo_red_light" />
+
+                <TextView
+                    android:id="@+id/memberContact"
+                    android:layout_marginStart="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:text="Contact:- " />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/membFacebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_facebook"
+                        android:tint="@color/grey_80"
+                        android:layout_marginStart="5dp"
+                        app:backgroundTint="@color/grey_20"
+                        app:fabSize="mini"
+                        android:layout_marginBottom="5dp"
+                        app:rippleColor="@color/colorWhite" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/membLinkedIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_linkedin"
+                        android:tint="@color/grey_80"
+                        app:backgroundTint="@color/grey_20"
+                        app:fabSize="mini"
+                        android:layout_marginBottom="5dp"
+                        app:rippleColor="@color/colorWhite" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/membInsta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_instagram"
+                            android:layout_marginEnd="5dp"
+                            android:tint="@color/grey_80"
+                            app:backgroundTint="@color/grey_20"
+                            app:fabSize="mini"
+                            android:layout_marginBottom="5dp"
+                            app:rippleColor="@color/colorWhite" />
+                    </LinearLayout>
+
+
+<!--                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/membEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_email_24px"
+                        android:layout_marginEnd="5dp"
+                        android:tint="@color/grey_80"
+                        app:backgroundTint="@color/grey_20"
+                        app:fabSize="mini"
+                        android:layout_marginBottom="5dp"
+                        app:rippleColor="@color/colorWhite" />
+                    </LinearLayout>-->
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

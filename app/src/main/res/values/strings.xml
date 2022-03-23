@@ -1,0 +1,32 @@
+<!--
+sportechchess@iitd.ac.in		    chess_Sportech@)		    ThcKrak6vkY2PPb6sHxzg1qw3BC3
+sportechathletics@iitd.ac.in		athletics_Sportech@)		let7NEZjyYZtUvg8kzcKB9bUlKC3
+sportechbadminton@iitd.ac.in		badminton_Sportech@)		dp9SH2RyqzXuf0dm3Txqmhis1W12
+sportechbasketball@iitd.ac.in		basketball_Sportech@)		KBCBmJvBbEZyDgY6ETQEbCVlK3h1
+sportechcricket@iitd.ac.in		    cricket_Sportech@)		    unSgdHAkBjMRLkneZhnD0R9Vhhl2
+sportechhockey@iitd.ac.in	    	hockey_Sportech@)	    	jIA7MoPKZXR2srXDiQ3NiSphqc92
+sportechlawntennis@iitd.ac.in		lawntennis_Sportech@)		QS2uFchB1HXt8idQkER7qIX82g83
+sportechsquash@iitd.ac.in		    squash_Sportech@)		    iyvzPygAF2fNrZIqGVovqIbCYfx2
+sportechtabletennis@iitd.ac.in		tabletennis_Sportech@)		aTt1aR9sKWV8GZ2v3eHE2zveWbj2
+sportechvolleyball@iitd.ac.in		volleyball_Sportech@)		de4pk1e7Fwc9SeWWOJ62ridMs5c2
+sportechweightlifting@iitd.ac.in	weightlifting_Sportech@)	GHYljTKEVdPAEvkLqhj8okiEDbA2
+-->
+<resources>
+    <string name="app_name">Sportech\n2020</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="developed_by"><u>Developed by Sportech IITD Technical Team</u></string>
+    <string name="chessUID">"ThcKrak6vkY2PPb6sHxzg1qw3BC3"</string>
+    <string name="athleticsUID">let7NEZjyYZtUvg8kzcKB9bUlKC3</string>
+    <string name="badmintonUID">dp9SH2RyqzXuf0dm3Txqmhis1W12</string>
+    <string name="basketballUID">KBCBmJvBbEZyDgY6ETQEbCVlK3h1</string>
+    <string name="cricketUID">unSgdHAkBjMRLkneZhnD0R9Vhhl2</string>
+    <string name="footballUID">o2wOmmayJUbrq2i2C7VpZAASeE73</string>
+    <string name="hockeyUID">jIA7MoPKZXR2srXDiQ3NiSphqc92</string>
+    <string name="lawntennisUID">QS2uFchB1HXt8idQkER7qIX82g83</string>
+    <string name="squashUID">iyvzPygAF2fNrZIqGVovqIbCYfx2</string>
+    <string name="tabletennisUID">aTt1aR9sKWV8GZ2v3eHE2zveWbj2</string>
+    <string name="volleyballUID">de4pk1e7Fwc9SeWWOJ62ridMs5c2</string>
+    <string name="weightliftingUID">GHYljTKEVdPAEvkLqhj8okiEDbA2</string>
+</resources>

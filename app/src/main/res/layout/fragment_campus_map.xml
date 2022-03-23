@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CampusMap">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+        <com.sportech20.iitd.PinView
+                android:id="@+id/photo_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Places of Interest"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/atm_expandable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="ATMs"
+                app:inner_view="@layout/map_point_recycler_view"
+                app:expandOnClick="true"
+                app:animationDuration="300"
+                app:startExpanded="false"/>
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/eateries_expandable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Eateries"
+                app:inner_view="@layout/map_point_recyclerview_eateries"
+                app:expandOnClick="true"
+                app:animationDuration="300"
+                app:startExpanded="false"/>
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/sports_expandable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Sports Venues"
+                app:inner_view="@layout/map_point_recyclerview_sports"
+                app:expandOnClick="true"
+                app:animationDuration="300"
+                app:startExpanded="false"/>
+
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/hostels_expandable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Hostels"
+                app:inner_view="@layout/map_point_recyclerview_hostel"
+                app:expandOnClick="true"
+                app:animationDuration="300"
+                app:startExpanded="false"/>
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/gates_expandable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Gates"
+                app:inner_view="@layout/map_point_recyclerview_gates"
+                app:expandOnClick="true"
+                app:animationDuration="300"
+                app:startExpanded="false" />
+
+            <com.alespero.expandablecardview.ExpandableCardView
+                android:id="@+id/randomShit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Hostels"
+                app:inner_view="@layout/map_point_recycler_view"
+                app:expandOnClick="true"
+                app:animationDuration="300"
+                android:visibility="gone"
+                app:startExpanded="false" />
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</FrameLayout>
