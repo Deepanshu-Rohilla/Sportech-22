@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFE53611">
+        android:background="#FcF6F5">
 
         <TextView
             android:id="@+id/textView1"
@@ -24,8 +24,9 @@
             android:layout_marginBottom="8dp"
             android:text="Test"
             android:textAlignment="center"
-            android:textColor="@color/colorWhite"
-            android:textSize="26sp" />
+            android:textColor="#990011"
+            android:textSize="26sp"
+            android:textStyle="italic|bold"/>
 
     </LinearLayout>
 

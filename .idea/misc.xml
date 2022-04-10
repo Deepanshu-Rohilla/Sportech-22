@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/bg_dblue.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/chess2_back_background.xml" value="0.1225" />
+        <entry key="app/src/main/res/drawable/chess_back_background.xml" value="0.1225" />
+        <entry key="app/src/main/res/drawable/custom_button.xml" value="0.1175" />
+        <entry key="app/src/main/res/drawable/football_back_background.xml" value="0.1225" />
+        <entry key="app/src/main/res/drawable/ic_calendar3.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_calendar4.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_facebook.xml" value="0.1065" />
+        <entry key="app/src/main/res/drawable/ic_instagram.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_map.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_sponsor.xml" value="0.112" />
+        <entry key="app/src/main/res/drawable/ic_sponsor2.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_sponsor3.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_sponsor_icon.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_support.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_team.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/ic_trophy.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_admin_login.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activity_admin_non_racquet.xml" value="0.2626271565755208" />
+        <entry key="app/src/main/res/layout/activity_admin_racket_special.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activity_athletics__admin.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activity_indiv_schedule.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activity_schedule.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activity_sport_results.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activity_sports.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activity_sports_list.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activity_team_members.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/activty_admin.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/admin_login.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/card_view.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_campus_map.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_female_results.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.24258911369382874" />
+        <entry key="app/src/main/res/layout/fragment_male_results.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_new_sports.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_photo_gallery.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_schedule.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_sponsors.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_sports.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/gallery_highlights.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/indiv_sponsor_company.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/item_layout.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/live_status.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/map_poi.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/map_point_layout.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/map_point_recycler_view.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/map_point_recyclerview_eateries.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/map_point_recyclerview_gates.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/map_point_recyclerview_hostel.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/map_point_recyclerview_sports.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/new_sport_frag_item_row.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/racquet_sport_layout.xml" value="0.18326873779296876" />
+        <entry key="app/src/main/res/layout/rounded_corner_xml.xml" value="0.10052083333333334" />
+        <entry key="app/src/main/res/layout/score_card.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/score_cardview.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/sports_foldview.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/team_details_layout.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/white_bg.xml" value="0.1787037037037037" />
+        <entry key="app/src/main/res/menu/options_menu.xml" value="0.23541666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

@@ -23,7 +23,7 @@ public class FemaleSportResultRecyclerViewHolder extends RecyclerView.ViewHolder
         View status;
         TextView tv_status;
 
-
+        LinearLayout new_layout;
         TextView racquet_team1_name;
         TextView racquet_team2_name;
         TextView racquet_team1_score;

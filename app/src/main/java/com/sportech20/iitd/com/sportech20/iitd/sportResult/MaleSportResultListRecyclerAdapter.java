@@ -24,9 +24,10 @@ public class MaleSportResultListRecyclerAdapter extends RecyclerView.Adapter<Mal
             = Collections.emptyList();
 
     Context context;
+    int k = 2;
 
     public MaleSportResultListRecyclerAdapter(List<MaleSportResultListData> list,
-                                     Context context)
+                                              Context context)
     {
         this.list = list;
         this.context = context;
@@ -152,7 +153,7 @@ public class MaleSportResultListRecyclerAdapter extends RecyclerView.Adapter<Mal
                 });
                 break;
             case Constants.RacquetViewTypeCode:
-               // viewHolder.venue.setText(list.get(position).venue);
+                // viewHolder.venue.setText(list.get(position).venue);
                 viewHolder.racquet_sport_view.setVisibility(View.VISIBLE);
                 viewHolder.racquet_team1_name.setText(list.get(position).team1);
                 viewHolder.racquet_team2_name.setText(list.get(position).team2);
@@ -193,5 +194,4 @@ public class MaleSportResultListRecyclerAdapter extends RecyclerView.Adapter<Mal
         super.onAttachedToRecyclerView(recyclerView);
     }
 }
-
 

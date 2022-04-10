@@ -26,7 +26,7 @@ public class FemaleSportResultListRecyclerAdapter extends RecyclerView.Adapter<F
     Context context;
 
     public FemaleSportResultListRecyclerAdapter(List<FemaleSportResultListData> list,
-                                              Context context)
+                                                Context context)
     {
         this.list = list;
         this.context = context;
@@ -193,5 +193,4 @@ public class FemaleSportResultListRecyclerAdapter extends RecyclerView.Adapter<F
         super.onAttachedToRecyclerView(recyclerView);
     }
 }
-
 

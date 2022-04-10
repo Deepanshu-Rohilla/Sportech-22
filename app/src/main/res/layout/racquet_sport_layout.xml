@@ -8,242 +8,278 @@
         android:id="@+id/raq_event_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="15dp"
-        android:textSize="18sp"
+        android:textSize="25sp"
+        android:textColor="#000000"
         android:textStyle="bold|italic" />
 
-    <LinearLayout
-
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="4">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-
-
-        <TextView
-            android:id="@+id/team1_name"
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:text="IITD"
-            android:gravity="center"
-            android:textSize="22sp" />
-
-        <TextView
-            android:id="@+id/team2_name"
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:text="IITK"
-            android:textSize="22sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/racquet_current_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Reverse Singles"
-            android:textSize="18sp" />
-
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="20dp">
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:background="#990011"
             android:weightSum="4">
-
-            <TextView
-
-                android:id="@+id/setDetails"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text=" Set 3 \n Set 2"
-
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/set1Team1_score"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="21"
-
-
-                android:textAlignment="center"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/set1Team2_score"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:textAlignment="center"
-                android:text="16"
-                android:textSize="17sp" />
-        </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#990011"
+            android:layout_marginTop="10dp"
+            android:weightSum="3">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:id="@+id/racquet_sport_result"
-                android:textSize="18sp"
-                android:text=""/>
-        </LinearLayout>
-
-      <!--  <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-
-            android:weightSum="4">
-
-            <TextView
-
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Set 2"
-
-                android:textSize="17sp" />
-
+                android:paddingBottom="10dp"/>
             <TextView
-                android:id="@+id/set2Team1_score"
+                android:id="@+id/team1_name"
                 android:layout_width="1dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="21"
-
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/set2Team2_score"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
+                android:textAlignment="center"
+                android:text="IITD"
+                android:textColor="@color/colorWhite"
                 android:gravity="center"
-                android:text="16"
-                android:textSize="17sp" />
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/team2_name"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:text="IITK"
+                android:textSize="22sp" />
         </LinearLayout>
-
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-
-            android:weightSum="4">
-
-            <TextView
-
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Set 1"
-
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/set1Team1_score"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="21"
-
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/set1Team2_score"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:gravity="center"
-                android:text="16"
-                android:textSize="17sp" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/racquet_doubles_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Doubles"
-            android:textSize="18sp" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="2">
-
+            android:orientation="vertical"
+            android:background="#FCF6F5">
             <TextView
-                android:id="@+id/doubleTeam1_score"
-                android:layout_width="1dp"
+                android:id="@+id/racquet_current_title"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:text="Who won ?"
+                android:layout_marginVertical="5dp"
                 android:gravity="center"
-                android:text="2"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/doubleTeam2_score"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="1"
-                android:textSize="17sp" />
+                android:textColor="#000000"
+                android:textStyle="bold|italic"
+                android:textSize="22sp" />
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/racquet_singles_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Singles"
-            android:textSize="18sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="2">
-
-            <TextView
-                android:id="@+id/singleTeam1_score"
-                android:layout_width="1dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="2"
-                android:textSize="17sp" />
+                android:orientation="vertical"
+                android:background="#FcF6F5">
 
-            <TextView
-                android:id="@+id/singleTeam2_score"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="1"
-                android:textSize="17sp" />
-        </LinearLayout>-->
-    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+
+                        android:id="@+id/setDetails"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" Set 3 \n Set 2"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:textColor="#990011"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/set1Team1_score"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="21"
+                        android:textAlignment="center"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/set1Team2_score"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="16"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/racquet_sport_result"
+                        android:textSize="18sp"
+                        android:text=""/>
+                </LinearLayout>
+
+
+                <!--  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+
+                      android:weightSum="4">
+
+                      <TextView
+
+                          android:layout_width="1dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="Set 2"
+
+                          android:textSize="17sp" />
+
+                      <TextView
+                          android:id="@+id/set2Team1_score"
+                          android:layout_width="1dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="21"
+
+                          android:textSize="17sp" />
+
+                      <TextView
+                          android:id="@+id/set2Team2_score"
+                          android:layout_width="1dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="2"
+                          android:gravity="center"
+                          android:text="16"
+                          android:textSize="17sp" />
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+
+                      android:weightSum="4">
+
+                      <TextView
+
+                          android:layout_width="1dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="Set 1"
+
+                          android:textSize="17sp" />
+
+                      <TextView
+                          android:id="@+id/set1Team1_score"
+                          android:layout_width="1dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:text="21"
+
+                          android:textSize="17sp" />
+
+                      <TextView
+                          android:id="@+id/set1Team2_score"
+                          android:layout_width="1dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="2"
+                          android:gravity="center"
+                          android:text="16"
+                          android:textSize="17sp" />
+                  </LinearLayout>
+
+                  <TextView
+                      android:id="@+id/racquet_doubles_title"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:text="Doubles"
+                      android:textSize="18sp" />
+
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="2">
+
+                      <TextView
+                          android:id="@+id/doubleTeam1_score"
+                          android:layout_width="1dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:text="2"
+                          android:textSize="17sp" />
+
+                      <TextView
+                          android:id="@+id/doubleTeam2_score"
+                          android:layout_width="1dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:text="1"
+                          android:textSize="17sp" />
+                  </LinearLayout>
+
+                  <TextView
+                      android:id="@+id/racquet_singles_title"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Singles"
+                      android:textSize="18sp" />
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="2">
+
+                      <TextView
+                          android:id="@+id/singleTeam1_score"
+                          android:layout_width="1dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:text="2"
+                          android:textSize="17sp" />
+
+                      <TextView
+                          android:id="@+id/singleTeam2_score"
+                          android:layout_width="1dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:text="1"
+                          android:textSize="17sp" />
+                  </LinearLayout>-->
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
 </LinearLayout>

@@ -65,9 +65,6 @@
             android:overScrollMode="always"
             android:layout_height="wrap_content"/>
 
-
-
-
     </LinearLayout>
     </ScrollView>
 </FrameLayout>

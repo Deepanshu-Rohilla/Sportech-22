@@ -12,12 +12,14 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="5dp">
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="#FCF6F5">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="10dp"
+            android:background="#FCF6F5">
 
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="15dp"
@@ -57,6 +59,8 @@
                     android:layout_marginStart="5dp"
                     android:layout_weight="1"
                     android:text="TextView"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
                     android:textSize="20sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
@@ -68,7 +72,7 @@
                     android:layout_weight="1"
                     android:text="Post"
                     android:textSize="14sp"
-                    android:textColor="@android:color/holo_red_light" />
+                    android:textColor="#990011" />
 
                 <TextView
                     android:id="@+id/memberContact"
@@ -77,6 +81,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
                     android:text="Contact:- " />
 
                 <LinearLayout
@@ -97,9 +103,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_facebook"
-                        android:tint="@color/grey_80"
+                        android:tint="@color/colorWhite"
                         android:layout_marginStart="5dp"
-                        app:backgroundTint="@color/grey_20"
+                        app:backgroundTint="#990011"
                         app:fabSize="mini"
                         android:layout_marginBottom="5dp"
                         app:rippleColor="@color/colorWhite" />
@@ -114,8 +120,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_linkedin"
-                        android:tint="@color/grey_80"
-                        app:backgroundTint="@color/grey_20"
+                        android:tint="@color/colorWhite"
+                        app:backgroundTint="#990011"
                         app:fabSize="mini"
                         android:layout_marginBottom="5dp"
                         app:rippleColor="@color/colorWhite" />
@@ -132,8 +138,8 @@
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_instagram"
                             android:layout_marginEnd="5dp"
-                            android:tint="@color/grey_80"
-                            app:backgroundTint="@color/grey_20"
+                            android:tint="@color/colorWhite"
+                            app:backgroundTint="#990011"
                             app:fabSize="mini"
                             android:layout_marginBottom="5dp"
                             app:rippleColor="@color/colorWhite" />

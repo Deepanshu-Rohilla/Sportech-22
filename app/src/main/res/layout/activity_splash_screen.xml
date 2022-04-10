@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fd5e00"
+    android:background="#070709"
     tools:context=".SplashScreen">
 
     <ImageView
         android:id="@+id/logo_splash"
         android:layout_width="250dp"
         android:layout_height="200dp"
-        app:srcCompat="@drawable/logo_sportech2"
+        app:srcCompat="@drawable/logo_trial"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"

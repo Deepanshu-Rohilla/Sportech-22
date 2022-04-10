@@ -4,37 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<!--    <androidx.cardview.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        app:cardCornerRadius="30dp"
-        android:elevation="20dp"
-        android:background="@color/colorAccent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp">-->
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="20dp"
+        android:background="#FCF6F5"
+        android:layout_marginHorizontal="15dp">
+
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
 
         <TextView
             android:id="@+id/event_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="18sp"
-            android:textStyle="bold|italic" />
+            android:layout_marginBottom="15dp"
+            android:text="Hi"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:orientation="horizontal"
+
             android:id="@+id/extra_info_cl"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_height="wrap_content">
+            android:orientation="horizontal">
 
             <TextView
 
@@ -43,8 +51,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:text="IITD"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="#990011"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/extra_info_right"
@@ -53,92 +64,102 @@
                 android:layout_marginEnd="20dp"
                 android:text="185-3(20)"
                 android:textAlignment="viewStart"
-                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="17sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent" />
+                android:textColor="#000000"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_marginTop="15dp"
-        android:layout_height="wrap_content">
-
-        <TextView
-
-            android:id="@+id/team1"
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:text="IITD"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/team1_score"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
-            android:text="185-3(20)"
-            android:textAlignment="viewStart"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <TextView
 
+                android:id="@+id/team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="IITD"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="#990011"
+                android:textStyle="bold"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/team1_score"
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/team2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:text="Ramjas College"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/team2_score"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
-            android:text="106-9(20)"
-            android:textAlignment="viewStart"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="185-3(20)"
+                android:textAlignment="viewStart"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_height="wrap_content">
+            android:orientation="horizontal">
 
             <TextView
-                android:visibility="gone"
+                android:id="@+id/team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Ramjas College"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="#990011"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/team2_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="106-9(20)"
+                android:textAlignment="viewStart"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
                 android:id="@+id/team3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:text="Ramjas College"
                 android:textSize="18sp"
+                android:visibility="gone"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:visibility="gone"
                 android:id="@+id/team3_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -147,6 +168,7 @@
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent" />
 
 
@@ -154,23 +176,22 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_height="wrap_content">
+            android:orientation="horizontal">
 
             <TextView
-                android:visibility="gone"
                 android:id="@+id/team4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:text="Ramjas College"
                 android:textSize="18sp"
+                android:visibility="gone"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:visibility="gone"
                 android:id="@+id/team4_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -179,41 +200,46 @@
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/type"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:text="IIT Delhi won by 2 run"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/setScore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="16sp"
-            android:visibility="gone"
-            android:layout_marginEnd="60dp"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="IIT Delhi won by 2 run"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/setScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:text=""
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
 
 
-    <!-- </androidx.cardview.widget.CardView> -->
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

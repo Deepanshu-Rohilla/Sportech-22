@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient1"
+    android:background="#FFFFFF"
     android:alpha="0.9"
     tools:context=".Admin.AdminLogin">
 
@@ -18,7 +18,8 @@
         android:layout_height="60dp"
         android:layout_marginTop="488dp"
         android:background="@drawable/custom_button"
-        android:text="Login"
+        android:text="Sign In"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,10 +34,12 @@
         android:layout_width="228dp"
         android:layout_height="68dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="User ID"
         android:inputType="textPersonName"
         android:textSize="16sp"
         android:textColor="#000000"
+        android:textColorHint="#990011"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -51,40 +54,14 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColorHint="#990011"
         android:textSize="16sp"
-
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
         app:layout_constraintVertical_bias="0.408" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="64dp"
-            android:layout_height="68dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginBottom="72dp"
-            app:layout_constraintBottom_toTopOf="@+id/editText"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.174"
-            app:srcCompat="@drawable/ic_bsa" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="91dp"
-            android:layout_height="62dp"
-            android:layout_marginRight="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/editText"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.128"
-            app:srcCompat="@drawable/ic_iitd_logo" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -111,12 +88,28 @@
         app:layout_constraintVertical_bias="0.251" />
 
         <TextView
+            android:id="@+id/admin_login2"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:gravity="center"
+            android:text="Sportech' 22"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/admin_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+        <TextView
             android:id="@+id/admin_login"
             android:layout_width="wrap_content"
             android:layout_height="59dp"
             android:layout_marginBottom="48dp"
             android:text="Admin Login"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
+            android:textStyle="bold"
             android:gravity="center"
             android:textSize="28sp"
             app:layout_constraintBottom_toTopOf="@+id/editText"
