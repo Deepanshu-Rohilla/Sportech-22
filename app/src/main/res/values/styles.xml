@@ -3,9 +3,10 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#111111</item>
+        <item name="colorPrimaryDark">#010101</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionOverflowButtonStyle">@style/threedotcolour</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -15,5 +16,16 @@
 
     </style>
 
+    <style name="TitleBarTextAppearance" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/almendra_sc</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="threedotcolour" parent="Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="tint">#000000</item>
+    </style>
 
 </resources>

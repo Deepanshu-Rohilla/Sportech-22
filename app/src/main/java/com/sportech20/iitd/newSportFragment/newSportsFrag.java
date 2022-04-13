@@ -85,18 +85,18 @@ public class newSportsFrag extends Fragment {
 
 
         sportList = new ArrayList<>();
-        sportList.add(new sportFragData(Constants.allSportsname[0], R.drawable.ic_running));
-        sportList.add(new sportFragData(Constants.allSportsname[1], R.drawable.ic_badminton));
-        sportList.add(new sportFragData(Constants.allSportsname[2], R.drawable.ic_basketball));
-        sportList.add(new sportFragData(Constants.allSportsname[3], R.drawable.ic_chess_piece));
-        sportList.add(new sportFragData(Constants.allSportsname[4], R.drawable.ic_cricket));
-        sportList.add(new sportFragData(Constants.allSportsname[5], R.drawable.ic_football));
-        sportList.add(new sportFragData(Constants.allSportsname[6], R.drawable.ic_hockey));
-        sportList.add(new sportFragData(Constants.allSportsname[7], R.drawable.ic_squash));
-        sportList.add(new sportFragData(Constants.allSportsname[8], R.drawable.ic_ping_pong));
-        sportList.add(new sportFragData(Constants.allSportsname[9], R.drawable.ic_tennis));
-        sportList.add(new sportFragData(Constants.allSportsname[10], R.drawable.ic_volleyball));
-        sportList.add(new sportFragData(Constants.allSportsname[11], R.drawable.ic_gym));
+        sportList.add(new sportFragData(Constants.allSportsname[0], R.drawable.ic_running, false));
+        sportList.add(new sportFragData(Constants.allSportsname[3], R.drawable.ic_chess_piece, false));
+        sportList.add(new sportFragData(Constants.allSportsname[4], R.drawable.ic_cricket, false));
+        sportList.add(new sportFragData(Constants.allSportsname[5], R.drawable.ic_football, false));
+        sportList.add(new sportFragData(Constants.allSportsname[6], R.drawable.ic_hockey, false));
+        sportList.add(new sportFragData(Constants.allSportsname[7], R.drawable.ic_squash, false));
+        sportList.add(new sportFragData(Constants.allSportsname[1], R.drawable.ic_badminton, false));
+        sportList.add(new sportFragData(Constants.allSportsname[2], R.drawable.ic_basketball, false));
+        sportList.add(new sportFragData(Constants.allSportsname[8], R.drawable.ic_tennis, false));
+        sportList.add(new sportFragData(Constants.allSportsname[9], R.drawable.ic_ping_pong, false));
+        sportList.add(new sportFragData(Constants.allSportsname[10], R.drawable.ic_volleyball, false));
+        //sportList.add(new sportFragData(Constants.allSportsname[11], R.drawable.ic_gym, false));
 
         mRecyclerView = view.findViewById(R.id.sportFragRecycleView);
         sportAdapter = new newSportFragAdapter(getContext(), sportList);

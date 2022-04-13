@@ -205,12 +205,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="0dp"
-                                android:textStyle="bold"
-                                android:text="SCHEDULE"
+                                android:fontFamily="@font/alice"
+                                android:text="Schedule"
                                 android:textColor="#000000"
                                 android:padding="2dp"
                                 android:gravity="center"
-                                android:textSize="12sp" />
+                                android:textSize="16sp" />
 
                         </LinearLayout>
 
@@ -244,12 +244,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="0dp"
-                                android:text="LIVE SCORES"
-                                android:textStyle="bold"
+                                android:layout_marginTop="5dp"
+                                android:text="Live Scores"
+                                android:fontFamily="@font/alice"
                                 android:textColor="#000000"
                                 android:gravity="center"
                                 android:padding="2dp"
-                                android:textSize="12sp" />
+                                android:textSize="16sp" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -277,12 +278,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="0dp"
-                                android:text="SUPPORT"
+                                android:text="Support"
                                 android:textColor="#000000"
-                                android:textStyle="bold"
+                                android:fontFamily="@font/alice"
                                 android:padding="2dp"
                                 android:gravity="center"
-                                android:textSize="13sp" />
+                                android:textSize="16sp" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -435,12 +436,12 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="0dp"
-                                    android:text="MAP"
+                                    android:text="Map"
                                     android:textColor="#000000"
                                     android:padding="2dp"
-                                    android:textStyle="bold"
+                                    android:fontFamily="@font/alice"
                                     android:gravity="center"
-                                    android:textSize="12sp" />
+                                    android:textSize="16sp" />
 
                             </LinearLayout>
 
@@ -474,12 +475,12 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="0dp"
-                                    android:text="OUR TEAM"
+                                    android:text="Our Team"
                                     android:textColor="#000000"
                                     android:padding="2dp"
-                                    android:textStyle="bold"
+                                    android:fontFamily="@font/alice"
                                     android:gravity="center"
-                                    android:textSize="12sp" />
+                                    android:textSize="16sp" />
 
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>
@@ -506,12 +507,12 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="0dp"
-                                    android:text="SPONSORS"
-                                    android:padding="2dp"
-                                    android:textColor="#000000"
+                                    android:fontFamily="@font/alice"
                                     android:gravity="center"
-                                    android:textStyle="bold"
-                                    android:textSize="13sp" />
+                                    android:padding="2dp"
+                                    android:text="Sponsors"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
 
                             </LinearLayout>
                         </androidx.cardview.widget.CardView>

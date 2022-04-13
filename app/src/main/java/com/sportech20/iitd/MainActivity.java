@@ -1,20 +1,26 @@
 package com.sportech20.iitd;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.firebase.database.collection.LLRBNode;
 import com.sportech20.iitd.Admin.AdminLogin;
 import com.sportech20.iitd.sponsors.SponsorsFragment;
 
@@ -38,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements HomeFrag.OnFragme
     HomeFrag homeFrag;
     boolean doubleBackToExitPressedOnce = false;
 
+    ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +53,13 @@ public class MainActivity extends AppCompatActivity implements HomeFrag.OnFragme
         changeFragment(new HomeFrag());
 
         setupBottomNav();
-
-
+        actionBar = getSupportActionBar();
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
+        //actionBar.setTitle(Html.fromHtml("<font color=\"black\">" + getString(R.string.app_name) + "</font>"));
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setCustomView(R.layout.custom_action_bar);
+        actionBar.setElevation(0);
 
     }
 
@@ -59,7 +71,9 @@ public class MainActivity extends AppCompatActivity implements HomeFrag.OnFragme
         bottomNavigation.add(new MeowBottomNavigation.Model(nav_bar_ids.Home,R.drawable.ic_home_black_24dp));
         bottomNavigation.add(new MeowBottomNavigation.Model(nav_bar_ids.Sports,R.drawable.ic_photo_album_black_24dp));
         bottomNavigation.add(new MeowBottomNavigation.Model(nav_bar_ids.About,R.drawable.ic_map_black_24dp));
-        bottomNavigation.setBackgroundBottomColor(R.drawable.bottom_bar);
+        bottomNavigation.setBackgroundBottomColor(R.color.colorAccent);
+//        bottomNavigation.getBar().setBackgroundColor(getResources().getColor(R.color.bottom_tabs));
+       bottomNavigation.setSelectedIconColor(0);
         homeFrag=new HomeFrag();
         campusMap=new CampusMap();
         newSportsFrag=new SponsorsFragment();

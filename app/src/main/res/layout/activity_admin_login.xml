@@ -70,9 +70,9 @@
             android:alpha="0.15  "
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/sportech20" />
 
         <ProgressBar
@@ -91,6 +91,7 @@
             android:id="@+id/admin_login2"
             android:layout_width="wrap_content"
             android:layout_height="59dp"
+            android:fontFamily="@font/almendra_sc"
             android:gravity="center"
             android:text="Sportech' 22"
             android:textColor="#000000"
@@ -102,16 +103,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.9" />
+
         <TextView
             android:id="@+id/admin_login"
             android:layout_width="wrap_content"
             android:layout_height="59dp"
             android:layout_marginBottom="48dp"
+            android:fontFamily="@font/acme"
+            android:gravity="center"
             android:text="Admin Login"
             android:textColor="#000000"
-            android:textStyle="bold"
-            android:gravity="center"
             android:textSize="28sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/editText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"

@@ -9,10 +9,15 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.sportech20.iitd.newSportFragment.newSportFragAdapter;
+import com.sportech20.iitd.newSportFragment.sportFragData;
+
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -35,7 +40,11 @@ public class ScheduleFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    ArrayList<DataModel> arrayList = new ArrayList<>();
+//    ArrayList<DataModel> arrayList = new ArrayList<>();
+    private RecyclerView mRecyclerView;
+    private GridLayoutManager mGridLayoutManager;
+    private List<sportFragData> sportList;
+    private newSportFragAdapter sportAdapter;
 
     public ScheduleFragment() {
         // Required empty public constructor
@@ -72,7 +81,7 @@ public class ScheduleFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_schedule, container, false);
+        /*View view = inflater.inflate(R.layout.fragment_schedule, container, false);
         RecyclerView recyclerView = view.findViewById(R.id.scheduleRecycler);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
@@ -98,6 +107,39 @@ public class ScheduleFragment extends Fragment {
 
         CustomAdapter customAdapter = new CustomAdapter(arrayList);
         recyclerView.setAdapter(customAdapter);
+        return view;*/
+        View view = inflater.inflate(R.layout.fragment_new_sports, container, false);
+
+
+        sportList = new ArrayList<>();
+        sportList.add(new sportFragData("Athletics", R.drawable.ic_running, true));
+        sportList.add(new sportFragData("Chess", R.drawable.ic_chess_piece, true));
+        sportList.add(new sportFragData("Cricket", R.drawable.ic_cricket, true));
+        sportList.add(new sportFragData("Football", R.drawable.ic_football, true));
+        sportList.add(new sportFragData("Hockey", R.drawable.ic_hockey, true));
+        sportList.add(new sportFragData("Squash", R.drawable.ic_squash, true));
+        sportList.add(new sportFragData("Badminton(M)", R.drawable.ic_badminton, true));
+        sportList.add(new sportFragData("Badminton(W)", R.drawable.ic_badminton, true));
+        sportList.add(new sportFragData("Basketball(M)", R.drawable.ic_basketball, true));
+        sportList.add(new sportFragData("Basketball(W)", R.drawable.ic_basketball, true));
+        sportList.add(new sportFragData("Lawn Tennis (M)", R.drawable.ic_ping_pong, true));
+        sportList.add(new sportFragData("Lawn Tennis (W)", R.drawable.ic_ping_pong, true));
+        sportList.add(new sportFragData("Table Tennis (M)", R.drawable.ic_tennis, true));
+        sportList.add(new sportFragData("Table Tennis (W)", R.drawable.ic_tennis, true));
+        sportList.add(new sportFragData("Volleyball (M)", R.drawable.ic_volleyball, true));
+        sportList.add(new sportFragData("Volleyball (W)", R.drawable.ic_volleyball, true));
+        //sportList.add(new sportFragData("WEIGHTLIFTING", R.drawable.ic_gym, true));
+
+        mRecyclerView = view.findViewById(R.id.sportFragRecycleView);
+        sportAdapter = new newSportFragAdapter(getContext(), sportList);
+        mRecyclerView.setAdapter(sportAdapter);
+        mGridLayoutManager = new GridLayoutManager(getContext(), 2);
+     /*   int spanCount = 3; // 3 columns
+        int spacing = 50; // 50px
+        boolean includeEdge = false;
+        mRecyclerView.addItemDecoration(new GridSpacingItemDecoration(spanCount, spacing, includeEdge));*/
+        mRecyclerView.setLayoutManager(mGridLayoutManager);
+
         return view;
     }
 

@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.sportech20.iitd.CommonFunctions;
 import com.sportech20.iitd.Constants;
+import com.sportech20.iitd.IndivScheduleActivity;
 import com.sportech20.iitd.R;
 import com.sportech20.iitd.SportResults;
 
@@ -48,22 +49,56 @@ public class newSportFragAdapter extends RecyclerView.Adapter<sportViewHolder> {
             public void onClick(View view) {
                 if(sportList.get(position).getSportName().equals(Constants.allSportsname[4])){
                     try {
-                        Toast.makeText(mContext, "Opening CricHeroes for live scores", Toast.LENGTH_SHORT).show();
-                        Uri uri = Uri.parse("https://cricheroes.in/tournament/113333/Sportech-IIT-Delhi#team");
-                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        mContext.startActivity(intent);
+                        if (sportList.get(position).isUseInSchedule()) {
+                            String t= (String) sportList.get(position).getSportName();
+                            if(!(t.equals("CRICKET") ||t.equals("FOOTBALL") ||t.equals("WEIGHTLIFTING") ||t.equals("ATHLETICS")))
+                            {
+                                Toast.makeText(mContext, "To be announced soon", Toast.LENGTH_SHORT).show();
+                                return;
+                            }
+                            //Toast.makeText(context, "Opening "+dataSet.get(listPosition).getSport()+" Schedule", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(mContext, IndivScheduleActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                            intent.putExtra("Sport", t);
+                            mContext.startActivity(intent);
+                        }
+                        else {
+                            Toast.makeText(mContext, "Opening CricHeroes for live scores", Toast.LENGTH_SHORT).show();
+                            Uri uri = Uri.parse("https://cricheroes.in/tournament/113333/Sportech-IIT-Delhi#team");
+                            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            mContext.startActivity(intent);
+                        }
+
 
                     }catch (Exception e){
                         Toast.makeText(mContext, "Unable to open CricHeros", Toast.LENGTH_SHORT).show();
                     }                }
                 else {
-                    Toast.makeText(mContext, "Loading..", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(mContext, SportResults.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    if (sportList.get(position).isUseInSchedule()) {
+                        String t= (String) sportList.get(position).getSportName();
+                        if(!(t.equals("CRICKET") ||t.equals("FOOTBALL") ||t.equals("WEIGHTLIFTING") ||t.equals("ATHLETICS")))
+                        {
+                            Toast.makeText(mContext, "To be announced soon", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+                        //Toast.makeText(context, "Opening "+dataSet.get(listPosition).getSport()+" Schedule", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(mContext, IndivScheduleActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
-                    intent.putExtra("Sport", sportList.get(position).getSportName());
-                    mContext.startActivity(intent);
+                        intent.putExtra("Sport", t);
+                        mContext.startActivity(intent);
+                    }
+                    else {
+                        Toast.makeText(mContext, "Loading..", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(mContext, SportResults.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                        intent.putExtra("Sport", sportList.get(position).getSportName());
+                        mContext.startActivity(intent);
+                    }
+
                 }
             }
         });

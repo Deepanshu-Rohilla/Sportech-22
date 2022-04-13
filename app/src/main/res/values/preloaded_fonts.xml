@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/acme</item>
+        <item>@font/advent_pro_medium</item>
         <item>@font/alfa_slab_one</item>
+        <item>@font/alice</item>
+        <item>@font/allerta</item>
+        <item>@font/almendra</item>
+        <item>@font/almendra_sc</item>
+        <item>@font/balthazar</item>
+        <item>@font/cagliostro</item>
     </array>
 </resources>

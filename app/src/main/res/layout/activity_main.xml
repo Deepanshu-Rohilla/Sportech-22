@@ -10,6 +10,11 @@
 <!--
     android:background="@drawable/main_background"
 -->
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        tools:context = ".MainActivity">
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/frame_container"
