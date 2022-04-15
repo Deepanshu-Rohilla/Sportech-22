@@ -13,48 +13,105 @@ public class Constants {
     public static final int TeamOCType=0;
     public static final int TeamTechType=1;
 
-    public static final String[] TechMembFacebook={"https://www.facebook.com/rajendra.choudhary.50767984","https://m.facebook.com/aravind.anireddy/","https://www.facebook.com/pratyay.pande.5/","https://www.facebook.com/madhur.sigar","https://www.facebook.com/pranjal.aggarwal.503","https://www.facebook.com/sayam.sethi","https://www.facebook.com/satyakam.singhal.1","https://www.facebook.com/asharam.meena.399041/","https://m.facebook.com/akash.dhingra.961","https://www.facebook.com/profile.php?id=100006769964890","https://www.facebook.com/harit.jaiswal.96"};
-    public static final String[] TechMembLinkedin={"","","https://www.linkedin.com/in/pratyay-pande-5a689a191/","https://www.linkedin.com/in/madhur-sigar-950a80175/","","https://www.linkedin.com/in/sayam-sethi-4930751a0/","https://www.linkedin.com/in/satyakam-singhal-49123716a","https://www.linkedin.com/in/asharam-meena/","","https://www.linkedin.com/in/pranav-mishra-324360a9","https://www.linkedin.com/in/harit-jaiswal-b25921176/"};
-    public static final String[] TechMembInsta={"https://www.instagram.com/rajendrachoudhary03/","https://www.instagram.com/so_called_aravind/","https://www.instagram.com/pratyaypande/","https://www.instagram.com/madhursigar/","","https://www.instagram.com/sayam.sethi2/","https://www.instagram.com/satyakam._singhal/","https://www.instagram.com/procoderforu/","https://www.instagram.com/joinakd/","https://www.instagram.com/mishra.pranav19/",""};
-    public static final String[] TechMembEmail={"rajendrachoudhary52935@gmail.com","anireddyaravindreddy@gmail.com","pratyaypande@gmail.com","madhuriitsigar@gmail.com","pranjal2041@gmail.com","sayam.sethi2@gmail.com","singhal.saty@gmail.com","asharam1234meena@gmail.com","joinakd@gmail.com","pranavmishrapranav19@gmail.com","haritjaiswal2000@gmail.com"};
+    public static final String[] TechMembFacebook={"https://www.facebook.com/","https://m.facebook.com/","https://www.facebook.com/","https://www.facebook.com/","https://www.facebook.com/"};
+    public static final String[] TechMembLinkedin={"https://www.linkedin.com/in/deepanshu-rohilla-418940188/","https://www.linkedin.com/in/pranjal2041/","https://www.linkedin.com/in/siddhesh-kalekar-310311201/","https://www.linkedin.com/in/sayam-sethi-4930751a0/","https://www.linkedin.com/in/asharam-meena/"};
+    public static final String[] TechMembInsta={"https://www.instagram.com/deepanshu__rohilla/","https://www.instagram.com/pranjalaggarwal2041/","https://www.instagram.com/siddhesh_.k/","https://www.instagram.com/sayam.sethi2/","https://www.instagram.com/uchiha_asha/"};
+    public static final String[] TechMembEmail={"","","","",""};
 
-    public static final String[] TechMembNames={"Rajendra Choudhary","Aravind Reddy","Pratyay Pande","Madhur Sigar",
-    "Pranjal Aggarwal","Sayam Sethi","Satyakam Singhal","Asharam Meena","Akash Dhingra","Pranav Mishra","Harit Jaiswal"};
+    public static final String[] TechMembNames={"Deepanshu Rohilla",
+    "Pranjal Aggarwal","Siddhesh","Sayam Sethi","Asharam Meena"};
 
-    public static final String[] TechMembContact={"Contact: +91 9828797671","Contact: +91 8008898701","Contact: +91 7838709669",
-    "Web Development Co-ordinator","Contact: +91 7017538459","Contact: +91 9502903682","Contact: +91 9808779509","Contact: +91 7428450925",
-    "Contact: +91 7060864515","Contact: +91 7879070457","Contact: +91 7999894388","Contact: +91 8448556692","Contact: +91 8901399303"};
+    public static final String[] TechMembContact={"","","","",""};
 
-    public static final int[] TechMembPhoto={R.drawable.rajendra,R.drawable.aravind,R.drawable.pratyay,R.drawable.madhur,
-    R.drawable.pranjal,R.drawable.sayam,R.drawable.satyakam,R.drawable.asharam,R.drawable.akash,R.drawable.pranav, R.drawable.harit};
+    public static final int[] TechMembPhoto={ R.drawable.deepanshu,
+    R.drawable.pranjal,R.drawable.siddhesh, R.drawable.sayam,R.drawable.asharam};
 
-    public static final String[] TechMembPost={"Overall Coordinator(Technical)","App-Development Coordinator","App-Development Coordinator",
-    "Web Development Co-ordinator","App-Development Executive","App-Development Executive","Web-Development Executive",
-            "App-Development Executive","App-Development Executive","App-Development Executive","Web-Development Executive"};
+    public static final String[] TechMembPost={"Overall Coordinator (Technical)",
+            "App-Development Coordinator",
+            "App-Development Coordinator",
+    "App-Development Coordinator",
+            "App-Development Coordinator"};
 
-    public static final String[] OCMembNames={"Sanidhya Tiwari","Krishna Choudhary","Hitesh Choudhary",
-    "Rajendra Choudhary","Medha Agarwal","Samar Singh Rathore","Samar Singla","Yash Chandra","Manoviraj Singh","Himanshu Thakur","Arunnishanth A"};
+    public static final String[] OCMembNames={
+            "Harsh Pratap Singh",
+            "Chand Delvadiya",
+            "Mihir Okte",
 
-    public static final String[] OCMembContact={"Contact: +91 9971585480","Contact: +91 8826089600","Contact: +91 8826067945",
-    "Contact: +91 9828797671","Contact: +91 9149378977","Contact: +91 9887399081","Contact: +91 7973077337","Contact: +91 9599705470","Contact: +91 9818597797",
-    "Contact: +91 9891112185","Contact: +91 8778089412"};
+            "Deepanshu Rohilla",
+            "Ananya Choudhary",
+            "Sarang Dev",
 
-    public static final String[] OCMembPost={"General Secretary, BSA IIT Delhi","Dep. General Secretary, BSA IIT Delhi",
-            "Overall Coordinator, Formal Events","Overall Coordinator, Technical","Overall Coordinator, Marketing",
-    "Overall Coordinator, Informal Events","Overall Coordinator, Infrastructure","Overall Coordinator, Media & Creatives",
-    "Overall Coordinator, Publicity","Overall Coordinator, Admin & Finance","Overall Coordinator, Hospitality"};
+            "Tanmay Gupta",
+            "Himaadri Nagarkoti",
+            "Himanshu Kumawat",
 
-    public static final String[] OCMembEmail={"bsagsec@iitd.ac.in","Krishnac.iitd@gmail.com ","hiteshmaan01@gmail.com ","rajendrachoudhary52935@gmail.com","medhaagra@gmail.com","samar_rathore@outlook.com","samarsingla121@gmail.com","yashchandra1298@gmail.com","manovirajsingh99@gmail.com","himanshu27thakur@gmail.com","arun262000@gmail.com"};
+            "Yateek",
+            "Shubham Singh Rathore",
+            "Shantanu Meena"};
 
-    public static final String[] OCMembFacebook={"https://www.facebook.com/sanidhya.kt","https://www.facebook.com/krishna.choudhary.587268","https://www.facebook.com/profile.php?id=100012660429405","https://www.facebook.com/rajendra.choudhary.50767984","https://www.facebook.com/medha.agarwal.104","https://www.facebook.com/samarsingh.rathore","https://www.facebook.com/profile.php?id=100004508018550","https://www.facebook.com/yash.chandra.7946","https://www.facebook.com/manoviraj.singh","https://www.facebook.com/himanshu.thakur.98871","https://www.facebook.com/arun262000"};
+    public static final String[] OCMembContact={"",
+            "",
+            "",
 
-    public static final String[] OCMembInsta={"","https://www.instagram.com/roll._.no.21","https://www.instagram.com/its_hitesh_here/","https://www.instagram.com/rajendrachoudhary03","https://www.instagram.com/_medha_agarwal","https://www.instagram.com/samar_khiladi","https://www.instagram.com/_samar_singla_","https://www.instagram.com/zero1yash","https://www.instagram.com/manoviraj_09/","","https://www.instagram.com/arun_n_88/"};
-    public static final String[] OCMembLinkedin={"https://www.linkedin.com/in/sanidhya-tiwari-562965172/","https://www.linkedin.com/in/krishna-choudhary-057007139/",
-    "","","","","https://www.linkedin.com/in/samar-singla-b01935169/","","","",""};
+            "",
+            "",
+            "",
 
-    public static final int[] OCMembPhoto={R.drawable.sanidhya2,R.drawable.krishna_choudary2,R.drawable.hitesh2,
-    R.drawable.rajendra2,R.drawable.medha_agrawal2,R.drawable.samar_singh2,R.drawable.samar_singla2,R.drawable.yash_chandra2,R.drawable.manoviraj2,
-            R.drawable.himanshu_thakur2, R.drawable.arunnishanth2};
+            "",
+            "",
+            "",
+
+            "",
+            "",
+            ""};
+
+    public static final String[] OCMembPost={
+            "General Secretary, BSA IIT Delhi",
+            "BSA Council",
+            "Overall Coordinator",
+
+            "Overall Coordinator",
+            "Overall Coordinator",
+            "Overall Coordinator",
+
+            "Overall Coordinator",
+            "Overall Coordinator",
+            "Overall Coordinator",
+
+            "Overall Coordinator",
+            "Overall Coordinator","Overall Coordinator"};
+
+    public static final String[] OCMembEmail={
+            "",
+            "",
+            "",
+
+            "",
+            "",
+            "",
+
+            "",
+            "",
+            "",
+
+            "",
+            "",
+            ""};
+
+    public static final String[] OCMembFacebook={"https://www.facebook.com/","https://www.facebook.com/","https://www.facebook.com/","https://www.facebook.com/","https://www.facebook.com/",
+            "https://www.facebook.com/","https://www.facebook.com/","https://www.facebook.com/","https://www.facebook.com/","https://www.facebook.com/","https://www.facebook.com/","https://www.facebook.com/"};
+
+    public static final String[] OCMembInsta={"https://www.instagram.com/_harsh25/","https://www.instagram.com/moon_it_is_/","https://www.instagram.com/mihirokte/","https://www.instagram.com/deepanshu__rohilla/","https://www.instagram.com/","https://www.instagram.com/sdev3112/","https://www.instagram.com/tanmaygupta_918/","https://www.instagram.com/nagar___da/","https://www.instagram.com/hk_00_7/","https://www.instagram.com/the_swooping_evil/","https://www.instagram.com/oliver.shubham/","https://www.instagram.com/__.shantanuu.__/"};
+    public static final String[] OCMembLinkedin={"https://www.linkedin.com/in/harsh-pratap-singh-8701ab17a/",
+            "https://www.linkedin.com/in/chand-delvadiya-7820971a8/",
+    "https://www.linkedin.com/in/mihirokte/","https://www.linkedin.com/in/deepanshu-rohilla-418940188/","https://www.linkedin.com/in/ananya-choudhary-3a8953188/",
+            "https://www.linkedin.com/in/sarang-dev-b825a21ba/","https://www.linkedin.com/in/tanmay-gupta-69669b1b2/","https://www.linkedin.com/in/himaadri-nagarkoti-9415a1218/",
+            "https://www.linkedin.com/in/himanshu-kumawat-115b27209/","https://www.linkedin.com/in/yateek-singh-6a5706202/",
+            "",""};
+
+    public static final int[] OCMembPhoto={R.drawable.harsh_pratap,R.drawable.chand,R.drawable.mihir,
+    R.drawable.deepanshu,R.drawable.ananya_choudhary,R.drawable.sarang,R.drawable.tanmay,R.drawable.himadri,R.drawable.himanshu,
+            R.drawable.yateek, R.drawable.contact, R.drawable.shantanu};
 
     public static Map<String, Integer> backgroundForSport = new HashMap<String, Integer>() {{
 

@@ -8,7 +8,8 @@
     tools:context=".HomeFrag">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
 
 
 
@@ -571,7 +572,7 @@
                             android:clickable="true"
                             android:textColor="#000000"
                             android:focusable="true"
-                            android:text="Sportech Technical team "
+                            android:text="@string/developed_by"
                             android:textAllCaps="true"
                             android:textSize="10sp"
                             android:textStyle="bold" />

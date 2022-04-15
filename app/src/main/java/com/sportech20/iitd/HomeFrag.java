@@ -178,7 +178,7 @@ public class HomeFrag extends Fragment  {
         fabWeb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openURL("https://www.sportechiitd.com/");
+                openURL("https://www.sportech-iitd.in/");
 
                 //Toast.makeText(getActivity(), "Opening Website", Toast.LENGTH_SHORT).show();
             }
@@ -363,7 +363,7 @@ public class HomeFrag extends Fragment  {
 
     private void onSupportClick(View view){
         Toast.makeText(getActivity(), "Opening Helpdesk", Toast.LENGTH_SHORT).show();
-        openURL("mailto:sportech20@gmail.com");
+        openURL("mailto:bsa.iitd21@gmail.com");
     }
 
     private void onMapClick(View view)
