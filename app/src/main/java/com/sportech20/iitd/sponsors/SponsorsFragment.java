@@ -87,12 +87,7 @@ public class SponsorsFragment extends Fragment {
         recyclerView=view.findViewById(R.id.sponsorsRView);
         ArrayList<sponsorsData> list=new ArrayList<>();
         list.add(new sponsorsData("https://www.spartanpoker.com/",R.drawable.spartanpoker));
-        list.add(new sponsorsData("https://www.thegamerzgalaxy.com/",R.drawable.gamerz_galaxy));
-        list.add(new sponsorsData("https://www.redbull.com/in-en/",R.drawable.red_bull));
-        list.add(new sponsorsData("https://www.zomato.com/ncr/raynas-cafe-safdarjung-new-delhi",R.drawable.rayna));
-        list.add(new sponsorsData("https://www.zomato.com/ncr/the-chai-story-hauz-khas-new-delhi",R.drawable.chai_story));
-        list.add(new sponsorsData("https://www.delhivery.com/",R.drawable.delhivery));
-        list.add(new sponsorsData("https://bajajsports.com/",R.drawable.bajaj));
+        list.add(new sponsorsData("https://frontrow.co.in/",R.drawable.frontrow));
         sponsorsAdapter = new sponsorsAdapter(getContext(), list);
         recyclerView.setAdapter(sponsorsAdapter);
         recyclerView.setLayoutManager(

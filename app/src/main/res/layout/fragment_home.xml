@@ -534,7 +534,7 @@
                         android:layout_height="200dp"
 
                         android:scaleType="fitXY"
-                        android:src="@drawable/theme_final4" />
+                        android:src="@drawable/mittal" />
                 </androidx.cardview.widget.CardView>
 
                 <LinearLayout
