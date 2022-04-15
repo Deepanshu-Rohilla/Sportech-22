@@ -23,7 +23,6 @@
             <LinearLayout
                 android:background="#FFFFFF"
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -37,7 +36,7 @@
                     app:cardMaxElevation="20dp">
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="200dp"
 
                         android:scaleType="fitXY"
                         android:src="@drawable/theme" />
@@ -59,12 +58,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="140dp"
                 android:layout_marginBottom="0dp"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="80dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="0dp"
                     android:layout_marginLeft="5dp"
@@ -92,8 +91,8 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
                                 android:scaleType="fitXY"
                                 android:layout_gravity="center"
                                 android:src="@drawable/ic_calendar3"
@@ -129,8 +128,8 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
                                 android:scaleType="fitXY"
                                 android:layout_gravity="center"
                                 android:src="@drawable/ic_trophy"
@@ -161,8 +160,8 @@
                             android:orientation="vertical">
 
                             <ImageView
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
                                 android:scaleType="fitXY"
                                 android:layout_marginTop="10dp"
                                 android:layout_gravity="center"
@@ -177,6 +176,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="0dp"
+                    android:paddingTop="3dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -293,12 +293,12 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="160dp"
+                    android:layout_height="140dp"
                     android:layout_marginBottom="0dp"
                     android:orientation="vertical">
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="80dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="0dp"
                         android:layout_marginLeft="5dp"
@@ -325,8 +325,8 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
                                     android:scaleType="fitXY"
                                     android:layout_gravity="center"
                                     android:src="@drawable/ic_map"
@@ -362,8 +362,8 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
                                     android:scaleType="fitXY"
                                     android:layout_gravity="center"
                                     android:src="@drawable/ic_team"
@@ -394,8 +394,8 @@
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
+                                    android:layout_width="45dp"
+                                    android:layout_height="45dp"
                                     android:layout_gravity="center"
                                     android:layout_marginBottom="10dp"
                                     android:scaleType="fitXY"
@@ -412,6 +412,7 @@
                         android:layout_marginBottom="10dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
+                        android:paddingTop="3dp"
                         android:paddingHorizontal="10dp">
 
                         <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -529,7 +530,7 @@
                     app:cardMaxElevation="20dp">
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="200dp"
 
                         android:scaleType="fitXY"
                         android:src="@drawable/theme_final4" />

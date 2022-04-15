@@ -86,7 +86,7 @@ public class SponsorsFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_sponsors, container, false);
         recyclerView=view.findViewById(R.id.sponsorsRView);
         ArrayList<sponsorsData> list=new ArrayList<>();
-        list.add(new sponsorsData("https://www.thesouledstore.com/",R.drawable.souled));
+        list.add(new sponsorsData("https://www.spartanpoker.com/",R.drawable.spartanpoker));
         list.add(new sponsorsData("https://www.thegamerzgalaxy.com/",R.drawable.gamerz_galaxy));
         list.add(new sponsorsData("https://www.redbull.com/in-en/",R.drawable.red_bull));
         list.add(new sponsorsData("https://www.zomato.com/ncr/raynas-cafe-safdarjung-new-delhi",R.drawable.rayna));

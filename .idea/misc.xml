@@ -46,12 +46,12 @@
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.23541666666666666" />
         <entry key="app/src/main/res/layout/fragment_campus_map.xml" value="0.23541666666666666" />
         <entry key="app/src/main/res/layout/fragment_female_results.xml" value="0.23541666666666666" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33798980712890625" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.28887786865234377" />
         <entry key="app/src/main/res/layout/fragment_male_results.xml" value="0.23541666666666666" />
         <entry key="app/src/main/res/layout/fragment_new_sports.xml" value="0.23541666666666666" />
         <entry key="app/src/main/res/layout/fragment_photo_gallery.xml" value="0.23541666666666666" />
         <entry key="app/src/main/res/layout/fragment_schedule.xml" value="0.23541666666666666" />
-        <entry key="app/src/main/res/layout/fragment_sponsors.xml" value="0.23541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_sponsors.xml" value="0.24438171386718752" />
         <entry key="app/src/main/res/layout/fragment_sports.xml" value="0.23541666666666666" />
         <entry key="app/src/main/res/layout/gallery_highlights.xml" value="0.23541666666666666" />
         <entry key="app/src/main/res/layout/indiv_sponsor_company.xml" value="0.23541666666666666" />
